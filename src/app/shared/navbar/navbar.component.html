@@ -1,20 +1,20 @@
+<!-- Το κουμπί για το άνοιγμα του μενού -->
 <div class="menu-icon" (click)="toggleMenu()">
-    <img src="assets/images/menu.png" alt="Menu" width="20">
+  <img src="assets/images/menu.png" alt="Menu" width="20">
+</div>
+
+<!-- Το πλάγιο μενού -->
+<nav class="navbar" [class.active]="isMenuActive">
+  <div class="navbar-header">
+    <h1 class="navbar-brand">Technico</h1>
   </div>
-  
-  <!-- Πλάγιο μενού -->
-  <nav class="navbar" [class.active]="isMenuActive">
-    <div class="navbar-header">
-      <h1 class="navbar-brand">Technico</h1>
+  <div class="nav-content">
+    <div class="nav-links-container">
+      <a routerLink="/" class="nav-link">Home</a>
+      <a routerLink="/properties-and-property-owners" class="nav-link">Properties</a>
+      <a routerLink="/repairs" class="nav-link">Repairs</a>
     </div>
-    <div class="nav-content">
-      <div class="nav-links-container">
-        <a routerLink="/" class="nav-link">Home</a>
-        <a routerLink="/properties-and-property-owners" class="nav-link">Properties</a>
-        <a routerLink="/repairs" class="nav-link">Repairs</a>
-      </div>
-     
-      <button class="logout-button" (click)="logout()">Logout</button>
-    </div>
-  </nav>
-  
+    <button class="logout-button" (click)="logout()">Logout</button>
+  </div>
+</nav>
+

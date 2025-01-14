@@ -1,7 +1,55 @@
-// body {
-//     margin: 0;
-//     width: 100%;
-
-//     font-family: Arial, sans-serif;
-//     background-color: #f5f5f5;
-// }
+/* Ρύθμιση του navbar ώστε να είναι σταθερό στην κορυφή */
+app-navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Βεβαιωνόμαστε ότι το navbar είναι πάνω από το περιεχόμενο */
+    background-color: #333;
+    transition: top 0.3s;
+  }
+  
+  /* Ρύθμιση του μενού ώστε να ανοίγει και να μην καλύπτει το footer */
+  .navbar.active {
+    z-index: 1100; /* Αν το μενού είναι ανοιχτό, αυξάνουμε το z-index για να είναι πάνω από το υπόλοιπο περιεχόμενο */
+  }
+  
+  /* Ρύθμιση του περιεχομένου ώστε να μην καλύπτεται από το navbar */
+  .router-outlet {
+    margin-top: 60px; /* Ύψος του navbar, προσαρμόζεις ανάλογα με το ύψος του navbar σου */
+    padding-bottom: 60px; /* Προσθήκη ενός padding-bottom για να μην καλύπτεται από το footer */
+  }
+  
+  /* Ρύθμιση για το footer ώστε να είναι στο κάτω μέρος */
+  app-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    z-index: 500; /* Ζητάμε το footer να έχει μικρότερο z-index από το navbar */
+    margin-top: 60px; /* Εξασφαλίζουμε ότι το footer δεν επικαλύπτεται από το περιεχόμενο */
+  }
+  
+  /* Ρύθμιση του body για να μην επικαλύπτεται το περιεχόμενο */
+  body {
+    padding-top: 60px; /* Προσθέτει το ύψος του navbar στο πάνω μέρος του περιεχομένου */
+  }
+  
+  /* Προσθήκη επιπλέον ρυθμίσεων για το μενού όταν είναι ανοιχτό */
+  .menu-icon {
+    z-index: 1200; /* Μεγαλύτερο z-index για να είναι το menu πάνω από όλα */
+  }
+  
+  /* Ρύθμιση του μενού όταν είναι ενεργό (στην περίπτωση που είναι ένα πλευρικό μενού) */
+  nav.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px; /* Πλάτος του μενού όταν είναι ανοιχτό */
+    background-color: rgba(0, 0, 0, 0.8); /* Θολή διαφάνεια για το μενού */
+    z-index: 1100; /* Εξασφαλίζουμε ότι το μενού είναι πάνω από τα υπόλοιπα στοιχεία */
+  }
+  
