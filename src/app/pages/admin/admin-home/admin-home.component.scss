@@ -1,0 +1,75 @@
+/* Στυλ για τον τίτλο h2 */
+h2 {
+  margin: 20px 40px 40px 20px;
+  color: #07910e;  /* Χρώμα του τίτλου */
+  font-size: 28px;  /* Μεγαλύτερο μέγεθος για καλύτερη αναγνωσιμότητα */
+  font-weight: bold;  /* Έντονη γραφή για τον τίτλο */
+  text-align: left;  /* Ευθυγραμμισμένος αριστερά */
+}
+
+/* Στυλ για την κύρια περιοχή container */
+.container {
+  margin: 40px 10px;
+  padding: 20px;  /* Αυξήθηκε το padding για περισσότερο διάστημα γύρω από το περιεχόμενο */
+  max-width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Στυλ για τα group divs */
+.group {
+  margin: 20px;
+}
+
+/* Στυλ για τα παραγράφους */
+p {
+  margin: 8px 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Στυλ για την πρώτη παράγραφο (πχ. Owner Vat, Repair Id κλπ.) */
+p:first-of-type {
+  font-weight: bold;
+  color: #2c3e50; /* Σκούρο χρώμα για την πρώτη παράγραφο */
+}
+
+/* Στυλ για μηνύματα όταν δεν υπάρχουν επισκευές */
+p.ng-star-inserted {
+  text-align: center;
+  font-size: 18px;
+  color: #e74c3c; /* Κόκκινο χρώμα για το μήνυμα "No repairs for today." */
+  margin: 20px auto;
+}
+
+/* Στυλ για τα divs που περιέχουν τα στοιχεία επισκευών */
+div > div {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+/* Προαιρετικό hover effect για τα divs (προς το παρόν είναι απενεργοποιημένο) */
+div > div:hover {
+  background-color: #eaf7ff;
+  border-color: #3498db;
+  box-shadow: 0 2px 6px rgba(52, 152, 219, 0.2);
+}
+
+/* Κεντράρισμα του τίτλου */
+.title {
+  text-align: center;  /* Κεντράρει οριζόντια */
+  font-size: 27px;  /* Προαιρετικό: μέγεθος γραμματοσειράς */
+  font-weight: bold;  /* Προαιρετικό: έντονη γραφή */
+  margin-top: 20px;  /* Προαιρετικό: προσθέτει κενό από πάνω */
+  color: #333;  /* Χρώμα για τον τίτλο */
+  font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: black;
+}

@@ -1,0 +1,22 @@
+/* Στυλ για το footer */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    bottom: 0; /* Το footer θα παραμένει πάντα στο κάτω μέρος της σελίδας */
+    left: 0;
+    width: 100%;
+    text-align: center; /* Κεντράρισμα των στοιχείων μέσα στο footer */
+    z-index: 1000; /* Βεβαιωνόμαστε ότι το footer είναι πάνω από το υπόλοιπο περιεχόμενο */
+  }
+  
+  .footer-item {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  
+  .footer-item strong {
+    font-weight: bold;
+  }
+  
